@@ -25,13 +25,16 @@ const BookList = () => {
   };
 
   return (
-    <section className="booklist">
-      {books.map((book, index) => {
-        return (
-          <Book {...book} index={index + 1} key={book.id} getBook={getBook} />
-        );
-      })}
-    </section>
+    <>
+      <h1>Amazon Best Sellers</h1>
+      <section className="booklist">
+        {books.map((book, index) => {
+          return (
+            <Book {...book} index={index + 1} key={book.id} getBook={getBook} />
+          );
+        })}
+      </section>
+    </>
   );
 };
 
