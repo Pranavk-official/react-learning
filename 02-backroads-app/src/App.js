@@ -1,7 +1,14 @@
+import { About, Footer, Hero, Navbar, Services, Tour } from "./components";
+
 const App = () => {
   return (
     <>
-      <h1>backroads app</h1>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Tour />
+      <Footer />
     </>
   );
 };
